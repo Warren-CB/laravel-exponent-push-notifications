@@ -56,6 +56,7 @@ class ExpoChannel
                 config('exponent-push-notifications.debug')
             );
         } catch (ExpoException $e) {
+            report($e);
             $this->events->dispatch(
                 new NotificationFailed($notifiable, $notification, 'expo-push-notifications', $e->getMessage())
             );
