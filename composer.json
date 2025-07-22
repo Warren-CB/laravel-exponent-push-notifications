@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": "^8.3",
-        "alymosul/exponent-server-sdk-php": "1.3.*",
+        "alymosul/exponent-server-sdk-php": "dev-master",
         "laravel/framework": "^11.0"
     },
     "require-dev": {
@@ -42,5 +42,11 @@
                 "NotificationChannels\\ExpoPushNotifications\\ExpoPushNotificationsServiceProvider"
             ]
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/warren-cb/exponent-server-sdk-php.git"
+        }
+    ]
 }
